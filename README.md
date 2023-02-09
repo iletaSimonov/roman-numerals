@@ -8,3 +8,9 @@ Test: "This converts numbers to strings individually"
 Code: let digits = String(+num).split('')
 ExpectedOutput: 9 = "9";
 
+Describe: while (i--)
+Test: "This adds an 'M' for thousands"
+Code: roman = (key[+digits.pop() +(i+10)] || "") 
+Results: toRoman(12); = 'XII'
+
+
