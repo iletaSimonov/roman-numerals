@@ -17,7 +17,7 @@ input {
   border-radius: 5px;
   padding: 7px;
   margin: 0 auto;
-  width: 45%;
+  width: 30%;
   border-width: 1px;
   border-color:  black;
 }
@@ -29,15 +29,22 @@ button {
   border-radius: 5px;
   background-color: black;
   color: white;
-  width: 45%;
+  width: 30%;
   letter-spacing: 2px;
 }
 
 button:hover {
-  background-color: darkblue;
+  background-color: darkslategray;
   color: lightgray;
 }
 
 div {
   text-align: center;
+  flex: 1 0 auto;
 }
+
+header {
+  text-align: center;
+  font-size: 10px;
+}
+

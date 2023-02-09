@@ -13,9 +13,10 @@ window.addEventListener('load', function(event) {
   });
 
 
-function toRoman(num) {
-  if (isNaN(num)) 
-    return NaN;
+  function toRoman(num) {
+    if (isNaN(num) || num > 3999) {
+      return NaN;
+  }
   let digits = String(+num).split(""),
   key = 
     ["",'C', 'CC', 'CCC', 'CD','D','DC','DCC','DCC','CM',
